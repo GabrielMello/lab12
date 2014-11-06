@@ -33,16 +33,23 @@ class MyApp:
 		
 
 		self.button1.bind("<Button-1>", self.button1Click)
+		self.button2.bind("<Button-1>", self.button2Click)
+		
 
 		drawpad.pack()
-	def button1Click(self, event): 
-	    direction(oval , -10, 0)  
-  		# Make the oval move to the left!
-                    # "global" makes sure that we can access our oval and our drawpad
-  	global oval
-  	global drawpad
-				
-				
+	def button1Click(self, event):
+	# Make the oval move to the left!
+        # "global" makes sure that we can access our oval and our drawpad
+          	 global oval
+          	 global drawpad
+                 drawpad.move(oval,-10,0)
+				    
+        def button2Click(self, event):
+	# Make the oval move to the left!
+        # "global" makes sure that we can access our oval and our drawpad
+          	 global oval
+          	 global drawpad
+                 drawpad.move(oval,10,0)				
               		
               						
               		# "Bind" an action to the first button												
