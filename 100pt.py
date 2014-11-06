@@ -32,28 +32,31 @@ class MyApp:
 		self.button2.grid(row=0,column=1)
 		
 
-		
-		
-		
-				
-		
-						
-		# "Bind" an action to the first button												
-self.button1.bind("<Button-1>", self.button1Click)
-		# Create the code to bind an action to the second button
-		# Do not change "<Button-1>"
-		 
-		  
-		# This creates the drawpad - no need to change this 
-drawpad.pack()
-		
+		self.button1.bind("<Button-1>", self.button1Click)
 
-		
-def button1Click(self, event):   
-		# Make the oval move to the left!
-                # "global" makes sure that we can access our oval and our drawpad
-		global oval
-		global drawpad
+		drawpad.pack()
+	def button1Click(self, event): 
+	    direction(oval , -10, 0)  
+  		# Make the oval move to the left!
+                    # "global" makes sure that we can access our oval and our drawpad
+  	global oval
+  	global drawpad
+				
+				
+              		
+              						
+              		# "Bind" an action to the first button												
+                
+               	# Create the code to bind an action to the second button
+               	# Do not change "<Button-1>"
+             		 
+                		  
+              		# This creates the drawpad - no need to change this 
+                
+              		
+                
+              		
+                
 	
 	# Add the event handler for the second button to make it move right!
 	
